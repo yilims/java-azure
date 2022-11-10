@@ -76,11 +76,6 @@ api = "0.7"
     version = "5.9.0"
 
   [[order.group]]
-    id = "paketo-buildpacks/encrypt-at-rest"
-    optional = true
-    version = "4.2.1"
-
-  [[order.group]]
     id = "paketo-buildpacks/environment-variables"
     optional = true
     version = "4.3.0"
