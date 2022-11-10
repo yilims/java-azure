@@ -201,6 +201,9 @@ jobs:
 
                 PAYLOAD=$(cat "${GITHUB_EVENT_PATH}")
 
+                echo "Payload"
+                echo "${PAYLOAD}"
+
                 RELEASE_ID=$(jq -n -r --argjson PAYLOAD "${PAYLOAD}" '$PAYLOAD.release.id')
                 RELEASE_TAG_NAME=$(jq -n -r --argjson PAYLOAD "${PAYLOAD}" '$PAYLOAD.release.tag_name')
                 RELEASE_NAME=$(jq -n -r --argjson PAYLOAD "${PAYLOAD}" '$PAYLOAD.release.name')
