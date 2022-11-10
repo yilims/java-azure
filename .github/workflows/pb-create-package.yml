@@ -9,13 +9,13 @@ jobs:
         runs-on:
             - ubuntu-latest
         steps:
-            - name: Docker login gcr.io
+            - name: Docker login docker.io
               if: ${{ (github.event_name != 'pull_request' || ! github.event.pull_request.head.repo.fork) && (github.actor != 'dependabot[bot]') }}
               uses: docker/login-action@v2
               with:
                 password: ${{ secrets.JAVA_GCLOUD_SERVICE_ACCOUNT_KEY }}
-                registry: gcr.io
-                username: _json_key
+                registry: docker.io
+                username: showpune
             - uses: actions/setup-go@v3
               with:
                 go-version: "1.18"
