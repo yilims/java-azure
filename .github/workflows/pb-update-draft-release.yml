@@ -18,7 +18,7 @@ jobs:
               uses: docker/login-action@v2
               with:
                 password: ${{ secrets.JAVA_GCLOUD_SERVICE_ACCOUNT_KEY }}
-                registry: gcr.io
+                registry: docker.io
                 username: showpune
             - uses: actions/checkout@v3
             - name: Update draft release with buildpack information
