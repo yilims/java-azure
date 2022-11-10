@@ -188,7 +188,7 @@ jobs:
                     --format "${FORMAT}"
                 fi
               env:
-                PACKAGES: gcr.io/paketo-buildpacks/java-azure
+                PACKAGES: showpune/java-azure-spring-apps
                 PUBLISH: "true"
                 VERSION: ${{ steps.version.outputs.version }}
                 VERSION_MAJOR: ${{ steps.version.outputs.version-major }}
