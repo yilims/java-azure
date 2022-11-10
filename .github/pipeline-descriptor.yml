@@ -7,11 +7,11 @@ codeowners:
   owner: "@paketo-buildpacks/java-buildpacks"
 
 package:
-  repository:     gcr.io/paketo-buildpacks/java-azure
+  repository:     showpune/java-azure-spring-apps
   register:       true
   registry_token: ${{ secrets.JAVA_GITHUB_TOKEN }}
 
 docker_credentials:
-- registry: gcr.io
-  username: _json_key
+- registry: docker.io
+  username: showpune
   password: ${{ secrets.JAVA_GCLOUD_SERVICE_ACCOUNT_KEY }}
