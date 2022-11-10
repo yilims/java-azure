@@ -205,7 +205,7 @@ jobs:
                 echo "${PAYLOAD}"
 
                 RELEASE_ID=$(jq -n -r --argjson PAYLOAD "${PAYLOAD}" '$PAYLOAD.release.id')
-                echo "${PAYRELEASE_IDLOAD}"
+                echo "${RELEASE_ID}"
                 RELEASE_TAG_NAME=$(jq -n -r --argjson PAYLOAD "${PAYLOAD}" '$PAYLOAD.release.tag_name')
                 echo "${RELEASE_TAG_NAME}"
                 RELEASE_NAME=$(jq -n -r --argjson PAYLOAD "${PAYLOAD}" '$PAYLOAD.release.name')
