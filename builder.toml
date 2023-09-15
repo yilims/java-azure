@@ -1,0 +1,17 @@
+# Buildpacks to include in builder
+[[buildpacks]]
+uri = "docker://showpune/buildpack-java-azure:latest"
+
+# Order used for detection
+[[order]]
+    # This buildpack will display build-time information (as a dependency)
+    [[order.group]]
+    id = "showpune/java-azure"
+    version = "0.0.2"
+
+# Stack that will be used by the builder
+[stack]
+  build-image = "docker.io/paketobuildpacks/build-jammy-base:0.1.75"
+  id = "io.buildpacks.stacks.jammy"
+  run-image = "index.docker.io/paketobuildpacks/run-jammy-base:latest"
+  run-image-mirrors = []

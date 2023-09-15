@@ -1,0 +1,1 @@
+pack build showpune/spring-petclinic:mybp --builder showpune/builder-java-azure:jammy --path /mnt/c/projects/spring-petclinic -v

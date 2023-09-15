@@ -1,3 +1,6 @@
+[buildpack]
+uri = "."
+
 [[dependencies]]
   uri = "docker://gcr.io/paketo-buildpacks/ca-certificates:3.6.3"
 
@@ -5,31 +8,7 @@
   uri = "docker://gcr.io/paketo-buildpacks/microsoft-openjdk:3.1.6"
 
 [[dependencies]]
-  uri = "docker://gcr.io/paketo-buildpacks/yarn:1.1.11"
-
-[[dependencies]]
-  uri = "docker://gcr.io/paketo-buildpacks/node-engine:1.9.0"
-
-[[dependencies]]
-  uri = "docker://gcr.io/paketo-buildpacks/syft:1.35.0"
-
-[[dependencies]]
-  uri = "docker://gcr.io/paketo-buildpacks/leiningen:4.6.4"
-
-[[dependencies]]
-  uri = "docker://gcr.io/paketo-buildpacks/clojure-tools:2.8.8"
-
-[[dependencies]]
-  uri = "docker://gcr.io/paketo-buildpacks/gradle:7.4.0"
-
-[[dependencies]]
   uri = "docker://gcr.io/paketo-buildpacks/maven:6.15.6"
-
-[[dependencies]]
-  uri = "docker://gcr.io/paketo-buildpacks/sbt:6.12.4"
-
-[[dependencies]]
-  uri = "docker://gcr.io/paketo-buildpacks/watchexec:2.8.3"
 
 [[dependencies]]
   uri = "docker://gcr.io/paketo-buildpacks/executable-jar:6.7.4"
@@ -38,37 +17,13 @@
   uri = "docker://gcr.io/paketo-buildpacks/apache-tomcat:7.13.8"
 
 [[dependencies]]
-  uri = "docker://gcr.io/paketo-buildpacks/apache-tomee:1.7.4"
-
-[[dependencies]]
-  uri = "docker://gcr.io/paketo-buildpacks/liberty:3.8.4"
-
-[[dependencies]]
-  uri = "docker://gcr.io/paketo-buildpacks/dist-zip:5.6.4"
-
-[[dependencies]]
-  uri = "docker://gcr.io/paketo-buildpacks/spring-boot:5.27.1"
-
-[[dependencies]]
-  uri = "docker://gcr.io/paketo-buildpacks/procfile:5.6.4"
-
-[[dependencies]]
-  uri = "docker://gcr.io/paketo-buildpacks/jattach:1.4.4"
-
-[[dependencies]]
   uri = "docker://gcr.io/paketo-buildpacks/azure-application-insights:5.15.4"
-
-[[dependencies]]
-  uri = "docker://gcr.io/paketo-buildpacks/datadog:3.17.0"
-
-[[dependencies]]
-  uri = "docker://gcr.io/paketo-buildpacks/java-memory-assistant:1.4.4"
-
-[[dependencies]]
-  uri = "docker://gcr.io/paketo-buildpacks/encrypt-at-rest:4.5.5"
-
+  
 [[dependencies]]
   uri = "docker://gcr.io/paketo-buildpacks/environment-variables:4.5.3"
 
 [[dependencies]]
   uri = "docker://gcr.io/paketo-buildpacks/image-labels:4.5.2"
+
+[[dependencies]]
+  uri = "docker://gcr.io/paketo-buildpacks/syft:1.35.0"
