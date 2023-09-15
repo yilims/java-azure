@@ -11,7 +11,7 @@ uri = "docker://showpune/buildpack-java-azure:latest"
 
 # Stack that will be used by the builder
 [stack]
-  build-image = "docker.io/paketobuildpacks/build-jammy-base:0.1.75"
-  id = "io.buildpacks.stacks.jammy"
-  run-image = "index.docker.io/paketobuildpacks/run-jammy-base:latest"
+  build-image = "showpune/build-debian-base:0.0.1"
+  id = "com.microsoft.stacks.debian"
+  run-image = "showpune/run-debian-base:0.0.1"
   run-image-mirrors = []
