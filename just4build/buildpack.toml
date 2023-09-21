@@ -48,3 +48,8 @@ api = "0.10"
     id = "paketo-buildpacks/executable-jar"
     optional = true
     version = "6.7.4"
+
+  [[order.group]]
+    id = "showpune/export-buildresult"
+    optional = true
+    version = "0.0.1"

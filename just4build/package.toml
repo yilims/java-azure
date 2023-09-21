@@ -12,3 +12,8 @@ uri = "."
 
 [[dependencies]]
   uri = "docker://gcr.io/paketo-buildpacks/executable-jar:6.7.4"
+
+[[dependencies]]
+  uri = "docker://showpune/export-buildresult:0.0.1"
+  
+  

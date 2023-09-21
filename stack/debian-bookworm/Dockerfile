@@ -14,7 +14,7 @@ RUN groupadd cnb --gid ${CNB_GROUP_ID} && \
 # Install common packages
 RUN apt-get update && \
   apt-get install -y xz-utils ca-certificates && \
-  apt-get install -y jq && \
+  apt-get install -y jq tar && \
   rm -rf /var/lib/apt/lists/*
 
 # Start a new run stage
