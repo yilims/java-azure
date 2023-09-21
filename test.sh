@@ -2,3 +2,6 @@ pack build showpune/spring-petclinic:mybp --builder showpune/builder-java-azure:
 docker run --rm -p 8080:8080 showpune/spring-petclinic:mybp-debian
 
 pack rebase showpune/spring-petclinic:mybp-debian 
+
+
+pack build showpune/spring-petclinic:maven --builder showpune/builder-java-azure-just-build --path /mnt/c/projects/spring-petclinic -v

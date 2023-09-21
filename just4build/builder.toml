@@ -1,0 +1,17 @@
+# Buildpacks to include in builder
+[[buildpacks]]
+uri = "docker://showpune/buildpack-java-azure-just-build:latest"
+
+# Order used for detection
+[[order]]
+    # This buildpack will display build-time information (as a dependency)
+    [[order.group]]
+    id = "showpune/java-azure-just-build"
+    version = "0.0.2"
+
+# Stack that will be used by the builder
+[stack]
+  build-image = "showpune/build-debian-base:0.0.1"
+  id = "com.microsoft.stacks.debian"
+  run-image = "showpune/run-debian-base:0.0.1"
+  run-image-mirrors = []
