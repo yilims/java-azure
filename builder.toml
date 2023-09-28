@@ -20,9 +20,9 @@ uri = "docker://oryx/java-azure:0.0.1"
 
 # Stack that will be used by the builder
 [stack]
-  build-image = "acrd170386adff94913a.azurecr.io/oryx/build:java-17-20230927.2"
+  build-image = "oryx/build:java-17-20230927.2"
   id = "oryx.stacks.debian.bookworm"
-  run-image = "acrd170386adff94913a.azurecr.io/oryx/run:java-17-20230927.2"
+  run-image = "oryx/run:java-17-20230927.2"
   run-image-mirrors = []
 
 # Lifecycle that will be used by the builder

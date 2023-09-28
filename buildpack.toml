@@ -49,18 +49,4 @@ api = "0.10"
   [[order.group]]
     id = "paketo-buildpacks/executable-jar"
     optional = true
-<<<<<<< HEAD
     version = "6.7.4"
-=======
-    version = "6.7.4"
-
-  [[order.group]]
-    id = "paketo-buildpacks/environment-variables"
-    optional = true
-    version = "4.5.3"
-
-  [[order.group]]
-    id = "paketo-buildpacks/image-labels"
-    optional = true
-    version = "4.5.2"
->>>>>>> 39463e6bb1ee691d83e17e1fa7c436639f3bdd2e
