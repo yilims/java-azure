@@ -17,10 +17,10 @@ api = "0.10"
 [buildpack]
   description = "A Cloud Native Buildpack with an order definition suitable for Java applications on Azure"
   homepage = "https://paketo.io/docs/howto/java/"
-  id = "oryx/java-azure"
+  id = "showpune/java-azure-just-build"
   keywords = ["java", "composite", "azure"]
   name = "Paketo Buildpack for Azure Java"
-  version = "0.0.1"
+  version = "0.0.2"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -33,7 +33,6 @@ api = "0.10"
 
   [[order.group]]
     id = "paketo-buildpacks/microsoft-openjdk"
-    optional = true
     version = "3.1.6"
 
   [[order.group]]
@@ -42,25 +41,15 @@ api = "0.10"
     version = "1.35.0"
 
   [[order.group]]
-    id = "paketo-buildpacks/maven"
-    optional = true
-    version = "6.15.6"
+    id = "showpune/maven"
+    version = "buildonly"
 
   [[order.group]]
     id = "paketo-buildpacks/executable-jar"
     optional = true
-<<<<<<< HEAD
-    version = "6.7.4"
-=======
     version = "6.7.4"
 
   [[order.group]]
-    id = "paketo-buildpacks/environment-variables"
+    id = "showpune/export-buildresult"
     optional = true
-    version = "4.5.3"
-
-  [[order.group]]
-    id = "paketo-buildpacks/image-labels"
-    optional = true
-    version = "4.5.2"
->>>>>>> 39463e6bb1ee691d83e17e1fa7c436639f3bdd2e
+    version = "0.0.1"
