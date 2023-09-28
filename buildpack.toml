@@ -12,15 +12,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-api = "0.7"
+api = "0.10"
 
 [buildpack]
   description = "A Cloud Native Buildpack with an order definition suitable for Java applications on Azure"
   homepage = "https://paketo.io/docs/howto/java/"
-  id = "showpune/java-azure"
+  id = "oryx/java-azure"
   keywords = ["java", "composite", "azure"]
   name = "Paketo Buildpack for Azure Java"
-  version = "0.0.2"
+  version = "0.0.1"
 
   [[buildpack.licenses]]
     type = "Apache-2.0"
@@ -32,12 +32,8 @@ api = "0.7"
 [[order]]
 
   [[order.group]]
-    id = "paketo-buildpacks/ca-certificates"
-    optional = true
-    version = "3.6.3"
-
-  [[order.group]]
     id = "paketo-buildpacks/microsoft-openjdk"
+    optional = true
     version = "3.1.6"
 
   [[order.group]]
@@ -54,23 +50,3 @@ api = "0.7"
     id = "paketo-buildpacks/executable-jar"
     optional = true
     version = "6.7.4"
-
-  [[order.group]]
-    id = "paketo-buildpacks/apache-tomcat"
-    optional = true
-    version = "7.13.8"
-
-  [[order.group]]
-    id = "paketo-buildpacks/azure-application-insights"
-    optional = true
-    version = "5.15.4"
-
-  [[order.group]]
-    id = "paketo-buildpacks/environment-variables"
-    optional = true
-    version = "4.5.3"
-
-  [[order.group]]
-    id = "paketo-buildpacks/image-labels"
-    optional = true
-    version = "4.5.2"

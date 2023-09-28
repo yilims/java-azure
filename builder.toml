@@ -1,17 +1,30 @@
 # Buildpacks to include in builder
 [[buildpacks]]
-uri = "docker://showpune/buildpack-java-azure:latest"
+uri = "docker://oryx/java-azure:0.0.1"
+
+# Extensions to include in the builder
+[[extensions]]
+  uri = "docker://azure-buildpacks/azure-java-extension:0.0.1"
 
 # Order used for detection
 [[order]]
     # This buildpack will display build-time information (as a dependency)
     [[order.group]]
-    id = "showpune/java-azure"
-    version = "0.0.2"
+    id = "oryx/java-azure"
+    version = "0.0.1"
+
+[[order-extensions]]
+  [[order-extensions.group]]
+    id = "azure-buildpacks/azure-java-extension"
+    version = "0.0.1"
 
 # Stack that will be used by the builder
 [stack]
-  build-image = "showpune/build-debian-base:0.0.1"
-  id = "com.microsoft.stacks.debian"
-  run-image = "showpune/run-debian-base:0.0.1"
+  build-image = "acrd170386adff94913a.azurecr.io/oryx/build:java-17-20230927.2"
+  id = "oryx.stacks.debian.bookworm"
+  run-image = "acrd170386adff94913a.azurecr.io/oryx/run:java-17-20230927.2"
   run-image-mirrors = []
+
+# Lifecycle that will be used by the builder
+[lifecycle]
+  version = "0.17.0"
